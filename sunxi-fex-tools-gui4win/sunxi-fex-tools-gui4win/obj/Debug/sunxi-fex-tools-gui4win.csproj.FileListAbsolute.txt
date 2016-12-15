@@ -1,0 +1,12 @@
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\bin\Debug\sunxi-fex-tools-gui4win.exe.config
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\bin\Debug\sunxi-fex-tools-gui4win.exe.manifest
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\bin\Debug\sunxi-fex-tools-gui4win.application
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\bin\Debug\sunxi-fex-tools-gui4win.exe
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\bin\Debug\sunxi-fex-tools-gui4win.pdb
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi_fex_tools_gui4win.MainForm1.resources
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi_fex_tools_gui4win.Properties.Resources.resources
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.csproj.GenerateResource.Cache
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.exe.manifest
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.application
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.exe
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.pdb
