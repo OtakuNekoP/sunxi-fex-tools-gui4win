@@ -88,7 +88,7 @@
             this.TransFex.TabIndex = 2;
             this.TransFex.Text = "转换为FEX";
             this.TransFex.UseVisualStyleBackColor = true;
-            this.TransFex.Click += new System.EventHandler(this.button2_Click);
+            this.TransFex.Click += new System.EventHandler(this.TransFex_Click);
             // 
             // OpenBin
             // 
@@ -98,7 +98,7 @@
             this.OpenBin.TabIndex = 0;
             this.OpenBin.Text = "打开";
             this.OpenBin.UseVisualStyleBackColor = true;
-            this.OpenBin.Click += new System.EventHandler(this.button4_Click);
+            this.OpenBin.Click += new System.EventHandler(this.OpenBin_Click);
             // 
             // fex2bin
             // 
@@ -121,7 +121,7 @@
             this.TransBin.TabIndex = 2;
             this.TransBin.Text = "转换为BIN";
             this.TransBin.UseVisualStyleBackColor = true;
-            this.TransBin.Click += new System.EventHandler(this.button6_Click);
+            this.TransBin.Click += new System.EventHandler(this.TransBin_Click);
             // 
             // PathFex
             // 
@@ -141,7 +141,7 @@
             this.OpenFex.TabIndex = 0;
             this.OpenFex.Text = "打开";
             this.OpenFex.UseVisualStyleBackColor = true;
-            this.OpenFex.Click += new System.EventHandler(this.button5_Click);
+            this.OpenFex.Click += new System.EventHandler(this.OpenFex_Click);
             // 
             // Exit
             // 

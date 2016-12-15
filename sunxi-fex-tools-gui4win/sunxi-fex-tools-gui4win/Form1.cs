@@ -26,7 +26,7 @@ namespace sunxi_fex_tools_gui4win
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void TransFex_Click(object sender, EventArgs e)
         {
             if (File.Exists(PathBin.Text))
             {
@@ -53,7 +53,7 @@ namespace sunxi_fex_tools_gui4win
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void TransBin_Click(object sender, EventArgs e)
         {
             if (File.Exists(PathBin.Text))
             {
@@ -80,7 +80,7 @@ namespace sunxi_fex_tools_gui4win
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void OpenBin_Click(object sender, EventArgs e)
         {
             if (openBinDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -91,7 +91,7 @@ namespace sunxi_fex_tools_gui4win
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void OpenFex_Click(object sender, EventArgs e)
         {
             if (openFexDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -100,12 +100,6 @@ namespace sunxi_fex_tools_gui4win
                 sr.Close();
                 PathFex.Text = openFexDialog.FileName;
             }
-        }
-
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void About_Click(object sender, EventArgs e)
