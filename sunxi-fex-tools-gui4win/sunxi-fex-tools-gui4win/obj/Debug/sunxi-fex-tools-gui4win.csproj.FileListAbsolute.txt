@@ -10,3 +10,4 @@ C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\su
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.application
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.exe
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.pdb
+C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi-fex-tools-gui4win.csprojResolveAssemblyReference.cache

@@ -28,41 +28,55 @@ namespace sunxi_fex_tools_gui4win
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Bin2fexCmd = Bin2fex + PathBin.Text + " " + Path.GetDirectoryName(PathBin.Text) + "\\" + Path.GetFileNameWithoutExtension(PathBin.Text) + ".fex";
-            try
+            if (File.Exists(PathBin.Text))
             {
-                Process proc = Process.Start(Fexc, Bin2fexCmd);
-                if (proc != null)
+                Bin2fexCmd = Bin2fex + PathBin.Text + " " + Path.GetDirectoryName(PathBin.Text) + "\\" + Path.GetFileNameWithoutExtension(PathBin.Text) + ".fex";
+                try
                 {
-                    proc.WaitForExit();
-                    MessageBox.Show(String.Format("bin2fex转换成功！", this.Fexc), this.Text,
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Process proc = Process.Start(Fexc, Bin2fexCmd);
+                    if (proc != null)
+                    {
+                        proc.WaitForExit();
+                        MessageBox.Show(String.Format("bin2fex转换成功！", this.Fexc), this.Text,
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (ArgumentException ex)
+                {
+                    MessageBox.Show(ex.Message, this.Text,
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (ArgumentException ex)
+            else
             {
-                MessageBox.Show(ex.Message, this.Text,
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("bin文件不存在！");
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Fex2binCmd = Fex2bin + PathFex.Text + " " + Path.GetDirectoryName(PathFex.Text) + "\\" + Path.GetFileNameWithoutExtension(PathFex.Text) + ".bin";
-            try
+            if (File.Exists(PathBin.Text))
             {
-                Process proc = Process.Start(Fexc, Fex2binCmd);
-                if (proc != null)
+                Fex2binCmd = Fex2bin + PathFex.Text + " " + Path.GetDirectoryName(PathFex.Text) + "\\" + Path.GetFileNameWithoutExtension(PathFex.Text) + ".bin";
+                try
                 {
-                    proc.WaitForExit();
-                    MessageBox.Show(String.Format("fex2bin转换成功！", this.Fexc), this.Text,
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Process proc = Process.Start(Fexc, Fex2binCmd);
+                    if (proc != null)
+                    {
+                        proc.WaitForExit();
+                        MessageBox.Show(String.Format("fex2bin转换成功！", this.Fexc), this.Text,
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (ArgumentException ex)
+                {
+                    MessageBox.Show(ex.Message, this.Text,
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (ArgumentException ex)
+            else
             {
-                MessageBox.Show(ex.Message, this.Text,
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("fex文件不存在！");
             }
         }
 
@@ -96,7 +110,7 @@ namespace sunxi_fex_tools_gui4win
 
         private void About_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("关于 Allwinner 配置档转换工具\n\n版本 v1.0 beta\n\nLicense:\nGPLv2\n\nOpen Source Components:\nsunxi-tools (https://github.com/linux-sunxi/sunxi-tools)\nCygwin (https://www.cygwin.com/)\n");
+            MessageBox.Show("关于 Allwinner 配置档转换工具\n\n版本 v1.001\n\nLicense:\nGPLv2\n\nGithub:\nhttps://github.com/OtakuNekoP/sunxi-fex-tools-gui4win\n\nOpen Source Components:\nsunxi-tools (https://github.com/linux-sunxi/sunxi-tools)\nCygwin (https://www.cygwin.com/)\n");
         }
 
         private void PathFex_DragEnter(object sender, DragEventArgs e)
