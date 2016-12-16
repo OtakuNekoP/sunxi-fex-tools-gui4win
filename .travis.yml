@@ -1,2 +1,3 @@
 language: csharp
 solution: sunxi-fex-tools-gui4win/sunxi-fex-tools-gui4win.sln
+os: windows
