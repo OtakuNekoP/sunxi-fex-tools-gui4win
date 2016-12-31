@@ -42,9 +42,8 @@
             this.About = new System.Windows.Forms.Button();
             this.openBinDialog = new System.Windows.Forms.OpenFileDialog();
             this.openFexDialog = new System.Windows.Forms.OpenFileDialog();
-            this.LangLabel = new System.Windows.Forms.Label();
             this.LangBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LangLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.bin2fex.SuspendLayout();
             this.fex2bin.SuspendLayout();
@@ -52,25 +51,25 @@
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.bin2fex);
             this.tabControl1.Controls.Add(this.fex2bin);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // bin2fex
             // 
-            resources.ApplyResources(this.bin2fex, "bin2fex");
             this.bin2fex.Controls.Add(this.PathBin);
             this.bin2fex.Controls.Add(this.TransFex);
             this.bin2fex.Controls.Add(this.OpenBin);
+            resources.ApplyResources(this.bin2fex, "bin2fex");
             this.bin2fex.Name = "bin2fex";
             this.bin2fex.UseVisualStyleBackColor = true;
             // 
             // PathBin
             // 
-            resources.ApplyResources(this.PathBin, "PathBin");
             this.PathBin.AllowDrop = true;
+            resources.ApplyResources(this.PathBin, "PathBin");
             this.PathBin.Name = "PathBin";
             this.PathBin.DragDrop += new System.Windows.Forms.DragEventHandler(this.PathBin_DragDrop);
             this.PathBin.DragEnter += new System.Windows.Forms.DragEventHandler(this.PathBin_DragEnter);
@@ -91,10 +90,10 @@
             // 
             // fex2bin
             // 
-            resources.ApplyResources(this.fex2bin, "fex2bin");
             this.fex2bin.Controls.Add(this.TransBin);
             this.fex2bin.Controls.Add(this.PathFex);
             this.fex2bin.Controls.Add(this.OpenFex);
+            resources.ApplyResources(this.fex2bin, "fex2bin");
             this.fex2bin.Name = "fex2bin";
             this.fex2bin.UseVisualStyleBackColor = true;
             // 
@@ -107,8 +106,8 @@
             // 
             // PathFex
             // 
-            resources.ApplyResources(this.PathFex, "PathFex");
             this.PathFex.AllowDrop = true;
+            resources.ApplyResources(this.PathFex, "PathFex");
             this.PathFex.Name = "PathFex";
             this.PathFex.DragDrop += new System.Windows.Forms.DragEventHandler(this.PathFex_DragDrop);
             this.PathFex.DragEnter += new System.Windows.Forms.DragEventHandler(this.PathFex_DragEnter);
@@ -144,32 +143,26 @@
             this.openFexDialog.FileName = "sys_config.fex";
             resources.ApplyResources(this.openFexDialog, "openFexDialog");
             // 
+            // LangBox1
+            // 
+            this.LangBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LangBox1.FormattingEnabled = true;
+            this.LangBox1.Items.AddRange(new object[] {
+            resources.GetString("LangBox1.Items"),
+            resources.GetString("LangBox1.Items1")});
+            resources.ApplyResources(this.LangBox1, "LangBox1");
+            this.LangBox1.Name = "LangBox1";
+            this.LangBox1.SelectedIndexChanged += new System.EventHandler(this.LangBox1_SelectedIndexChanged);
+            // 
             // LangLabel
             // 
             resources.ApplyResources(this.LangLabel, "LangLabel");
             this.LangLabel.Name = "LangLabel";
             // 
-            // LangBox1
-            // 
-            resources.ApplyResources(this.LangBox1, "LangBox1");
-            this.LangBox1.FormattingEnabled = true;
-            this.LangBox1.Items.AddRange(new object[] {
-            resources.GetString("LangBox1.Items"),
-            resources.GetString("LangBox1.Items1")});
-            this.LangBox1.Name = "LangBox1";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // MainForm1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.LangBox1);
             this.Controls.Add(this.LangLabel);
             this.Controls.Add(this.About);
@@ -203,9 +196,8 @@
         private System.Windows.Forms.TextBox PathBin;
         private System.Windows.Forms.TextBox PathFex;
         private System.Windows.Forms.Button TransBin;
-        private System.Windows.Forms.Label LangLabel;
         private System.Windows.Forms.ComboBox LangBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label LangLabel;
     }
 }
 

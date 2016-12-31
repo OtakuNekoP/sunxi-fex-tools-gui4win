@@ -61,7 +61,20 @@ namespace sunxi_fex_tools_gui4win {
         }
         
         /// <summary>
-        ///   查找类似 关于 Allwinner 配置档转换工具\n\n版本 v1.001\n\nLicense:\nGPLv2\n\nGithub:\nhttps://github.com/OtakuNekoP/sunxi-fex-tools-gui4win\n\nOpen Source Components:\nsunxi-tools (https://github.com/linux-sunxi/sunxi-tools)\nCygwin (https://www.cygwin.com/)\n 的本地化字符串。
+        ///   查找类似 关于 Allwinner 配置档转换工具
+        ///
+        ///版本 v1.010
+        ///
+        ///License:
+        ///GPLv2
+        ///
+        ///Github:
+        ///https://github.com/OtakuNekoP/sunxi-fex-tools-gui4win
+        ///
+        ///Open Source Components:
+        ///sunxi-tools (https://github.com/linux-sunxi/sunxi-tools)
+        ///Cygwin (https://www.cygwin.com/)
+        /// 的本地化字符串。
         /// </summary>
         internal static string Text_MsgBox_About {
             get {

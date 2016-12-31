@@ -152,10 +152,32 @@ namespace sunxi_fex_tools_gui4win
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LangBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");//TEST
+            String LangNowSelected;
+            if (LangBox1.SelectedIndex == 0)
+            {
+                LangNowSelected = "zh-CN";
+            }
+            else
+            {
+                if(LangBox1.SelectedIndex == 1)
+                {
+                    LangNowSelected = "en-US";
+                }
+                else
+                {
+                    LangNowSelected = "en-US";
+                }
+            }
 
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(LangNowSelected);
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LangNowSelected);
+
+            //(new MainForm1()).Show();//TEST
+
+            Controls.Clear();
+            InitializeComponent();
         }
     }
 }
