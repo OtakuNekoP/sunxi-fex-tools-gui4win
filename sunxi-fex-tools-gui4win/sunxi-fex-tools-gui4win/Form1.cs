@@ -25,6 +25,9 @@ namespace sunxi_fex_tools_gui4win
         String Fex2binCmd;
         String Bin2fexCmd;
 
+        CultureInfo culture = CultureInfo.CurrentCulture;
+        public int LangIndexNowSelected;
+
         public MainForm1()
         {
             InitializeComponent();
@@ -154,30 +157,39 @@ namespace sunxi_fex_tools_gui4win
 
         private void LangBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String LangNowSelected;
-            if (LangBox1.SelectedIndex == 0)
+            if (LangIndexNowSelected != LangBox1.SelectedIndex)
             {
-                LangNowSelected = "zh-CN";
+                LangIndexNowSelected = LangBox1.SelectedIndex;
+                String LangNowSelected;
+                if (LangBox1.SelectedIndex == 0)
+                {
+                    LangNowSelected = "zh-CN";
+                }
+                else
+                {  
+                    LangNowSelected = "en-US";
+                }
+
+                Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(LangNowSelected);
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LangNowSelected);
+
+                Controls.Clear();
+                InitializeComponent();
+            }
+            LangBox1.SelectedIndex = LangIndexNowSelected;
+        }
+
+        private void MainForm1_Load(object sender, EventArgs e)
+        {
+            if(culture.Name == "zh-CN")
+            {
+                LangIndexNowSelected = 0;
             }
             else
             {
-                if(LangBox1.SelectedIndex == 1)
-                {
-                    LangNowSelected = "en-US";
-                }
-                else
-                {
-                    LangNowSelected = "en-US";
-                }
+                LangIndexNowSelected = 1;
             }
-
-            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(LangNowSelected);
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LangNowSelected);
-
-            //(new MainForm1()).Show();//TEST
-
-            Controls.Clear();
-            InitializeComponent();
+            LangBox1.SelectedIndex = LangIndexNowSelected;
         }
     }
 }

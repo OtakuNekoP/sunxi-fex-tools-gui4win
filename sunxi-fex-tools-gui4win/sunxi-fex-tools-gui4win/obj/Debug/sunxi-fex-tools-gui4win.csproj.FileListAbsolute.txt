@@ -19,9 +19,6 @@ C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\su
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\en-US\sunxi-fex-tools-gui4win.resources.dll
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\zh-CN\sunxi-fex-tools-gui4win.resources.dll
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi_fex_tools_gui4win.Resource1.en-US.resources
-C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi_fex_tools_gui4win.MainForm1.en-ZA.resources
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\sunxi_fex_tools_gui4win.MainForm1.en.resources
-C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\bin\Debug\en-ZA\sunxi-fex-tools-gui4win.resources.dll
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\bin\Debug\en\sunxi-fex-tools-gui4win.resources.dll
-C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\en-ZA\sunxi-fex-tools-gui4win.resources.dll
 C:\Users\OtakuNekoP\Documents\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\sunxi-fex-tools-gui4win\obj\Debug\en\sunxi-fex-tools-gui4win.resources.dll

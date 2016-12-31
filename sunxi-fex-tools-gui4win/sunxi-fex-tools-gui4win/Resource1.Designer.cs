@@ -63,7 +63,7 @@ namespace sunxi_fex_tools_gui4win {
         /// <summary>
         ///   查找类似 关于 Allwinner 配置档转换工具
         ///
-        ///版本 v1.010
+        ///版本 v1.012
         ///
         ///License:
         ///GPLv2

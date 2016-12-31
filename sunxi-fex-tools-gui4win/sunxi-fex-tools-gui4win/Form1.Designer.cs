@@ -171,6 +171,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainForm1";
+            this.Load += new System.EventHandler(this.MainForm1_Load);
             this.tabControl1.ResumeLayout(false);
             this.bin2fex.ResumeLayout(false);
             this.bin2fex.PerformLayout();
