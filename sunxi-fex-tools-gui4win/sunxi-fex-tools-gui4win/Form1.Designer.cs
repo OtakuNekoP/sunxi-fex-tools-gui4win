@@ -42,6 +42,8 @@
             this.About = new System.Windows.Forms.Button();
             this.openBinDialog = new System.Windows.Forms.OpenFileDialog();
             this.openFexDialog = new System.Windows.Forms.OpenFileDialog();
+            this.LangBox1 = new System.Windows.Forms.ComboBox();
+            this.LangLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.bin2fex.SuspendLayout();
             this.fex2bin.SuspendLayout();
@@ -51,52 +53,38 @@
             // 
             this.tabControl1.Controls.Add(this.bin2fex);
             this.tabControl1.Controls.Add(this.fex2bin);
-            this.tabControl1.Location = new System.Drawing.Point(2, 1);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(630, 65);
-            this.tabControl1.TabIndex = 0;
             // 
             // bin2fex
             // 
             this.bin2fex.Controls.Add(this.PathBin);
             this.bin2fex.Controls.Add(this.TransFex);
             this.bin2fex.Controls.Add(this.OpenBin);
-            this.bin2fex.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.bin2fex, "bin2fex");
             this.bin2fex.Name = "bin2fex";
-            this.bin2fex.Padding = new System.Windows.Forms.Padding(3);
-            this.bin2fex.Size = new System.Drawing.Size(622, 39);
-            this.bin2fex.TabIndex = 0;
-            this.bin2fex.Text = "bin2fex";
             this.bin2fex.UseVisualStyleBackColor = true;
             // 
             // PathBin
             // 
             this.PathBin.AllowDrop = true;
-            this.PathBin.Location = new System.Drawing.Point(11, 9);
+            resources.ApplyResources(this.PathBin, "PathBin");
             this.PathBin.Name = "PathBin";
-            this.PathBin.Size = new System.Drawing.Size(460, 21);
-            this.PathBin.TabIndex = 1;
             this.PathBin.DragDrop += new System.Windows.Forms.DragEventHandler(this.PathBin_DragDrop);
             this.PathBin.DragEnter += new System.Windows.Forms.DragEventHandler(this.PathBin_DragEnter);
             // 
             // TransFex
             // 
-            this.TransFex.Location = new System.Drawing.Point(547, 4);
+            resources.ApplyResources(this.TransFex, "TransFex");
             this.TransFex.Name = "TransFex";
-            this.TransFex.Size = new System.Drawing.Size(64, 32);
-            this.TransFex.TabIndex = 2;
-            this.TransFex.Text = "转换为FEX";
             this.TransFex.UseVisualStyleBackColor = true;
             this.TransFex.Click += new System.EventHandler(this.TransFex_Click);
             // 
             // OpenBin
             // 
-            this.OpenBin.Location = new System.Drawing.Point(477, 4);
+            resources.ApplyResources(this.OpenBin, "OpenBin");
             this.OpenBin.Name = "OpenBin";
-            this.OpenBin.Size = new System.Drawing.Size(64, 32);
-            this.OpenBin.TabIndex = 0;
-            this.OpenBin.Text = "打开";
             this.OpenBin.UseVisualStyleBackColor = true;
             this.OpenBin.Click += new System.EventHandler(this.OpenBin_Click);
             // 
@@ -105,95 +93,91 @@
             this.fex2bin.Controls.Add(this.TransBin);
             this.fex2bin.Controls.Add(this.PathFex);
             this.fex2bin.Controls.Add(this.OpenFex);
-            this.fex2bin.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.fex2bin, "fex2bin");
             this.fex2bin.Name = "fex2bin";
-            this.fex2bin.Padding = new System.Windows.Forms.Padding(3);
-            this.fex2bin.Size = new System.Drawing.Size(622, 39);
-            this.fex2bin.TabIndex = 1;
-            this.fex2bin.Text = "fex2bin";
             this.fex2bin.UseVisualStyleBackColor = true;
             // 
             // TransBin
             // 
-            this.TransBin.Location = new System.Drawing.Point(547, 4);
+            resources.ApplyResources(this.TransBin, "TransBin");
             this.TransBin.Name = "TransBin";
-            this.TransBin.Size = new System.Drawing.Size(64, 32);
-            this.TransBin.TabIndex = 2;
-            this.TransBin.Text = "转换为BIN";
             this.TransBin.UseVisualStyleBackColor = true;
             this.TransBin.Click += new System.EventHandler(this.TransBin_Click);
             // 
             // PathFex
             // 
             this.PathFex.AllowDrop = true;
-            this.PathFex.Location = new System.Drawing.Point(11, 9);
+            resources.ApplyResources(this.PathFex, "PathFex");
             this.PathFex.Name = "PathFex";
-            this.PathFex.Size = new System.Drawing.Size(460, 21);
-            this.PathFex.TabIndex = 1;
             this.PathFex.DragDrop += new System.Windows.Forms.DragEventHandler(this.PathFex_DragDrop);
             this.PathFex.DragEnter += new System.Windows.Forms.DragEventHandler(this.PathFex_DragEnter);
             // 
             // OpenFex
             // 
-            this.OpenFex.Location = new System.Drawing.Point(477, 4);
+            resources.ApplyResources(this.OpenFex, "OpenFex");
             this.OpenFex.Name = "OpenFex";
-            this.OpenFex.Size = new System.Drawing.Size(64, 32);
-            this.OpenFex.TabIndex = 0;
-            this.OpenFex.Text = "打开";
             this.OpenFex.UseVisualStyleBackColor = true;
             this.OpenFex.Click += new System.EventHandler(this.OpenFex_Click);
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(553, 73);
+            resources.ApplyResources(this.Exit, "Exit");
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(64, 32);
-            this.Exit.TabIndex = 1;
-            this.Exit.Text = "退出";
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // About
             // 
-            this.About.Location = new System.Drawing.Point(17, 73);
+            resources.ApplyResources(this.About, "About");
             this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(64, 32);
-            this.About.TabIndex = 3;
-            this.About.Text = "关于";
             this.About.UseVisualStyleBackColor = true;
             this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // openBinDialog
             // 
             this.openBinDialog.FileName = "script.bin";
-            this.openBinDialog.Filter = "BIN (*.bin)|*.bin";
-            this.openBinDialog.Title = "打开BIN";
+            resources.ApplyResources(this.openBinDialog, "openBinDialog");
             // 
             // openFexDialog
             // 
             this.openFexDialog.FileName = "sys_config.fex";
-            this.openFexDialog.Filter = "FEX (*.fex)|*.fex";
-            this.openFexDialog.Title = "打开FEX";
+            resources.ApplyResources(this.openFexDialog, "openFexDialog");
+            // 
+            // LangBox1
+            // 
+            this.LangBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LangBox1.FormattingEnabled = true;
+            this.LangBox1.Items.AddRange(new object[] {
+            resources.GetString("LangBox1.Items"),
+            resources.GetString("LangBox1.Items1")});
+            resources.ApplyResources(this.LangBox1, "LangBox1");
+            this.LangBox1.Name = "LangBox1";
+            this.LangBox1.SelectedIndexChanged += new System.EventHandler(this.LangBox1_SelectedIndexChanged);
+            // 
+            // LangLabel
+            // 
+            resources.ApplyResources(this.LangLabel, "LangLabel");
+            this.LangLabel.Name = "LangLabel";
             // 
             // MainForm1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 111);
+            this.Controls.Add(this.LangBox1);
+            this.Controls.Add(this.LangLabel);
             this.Controls.Add(this.About);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm1";
-            this.Text = "Allwinner 配置档转换工具";
             this.tabControl1.ResumeLayout(false);
             this.bin2fex.ResumeLayout(false);
             this.bin2fex.PerformLayout();
             this.fex2bin.ResumeLayout(false);
             this.fex2bin.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -212,6 +196,8 @@
         private System.Windows.Forms.TextBox PathBin;
         private System.Windows.Forms.TextBox PathFex;
         private System.Windows.Forms.Button TransBin;
+        private System.Windows.Forms.ComboBox LangBox1;
+        private System.Windows.Forms.Label LangLabel;
     }
 }
 

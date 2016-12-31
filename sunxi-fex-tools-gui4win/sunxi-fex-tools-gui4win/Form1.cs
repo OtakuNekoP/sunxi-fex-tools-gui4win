@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;//ADD
 using System.IO;
+using System.Reflection;
+using System.Resources;
+using System.Globalization;
+using System.Threading;
 
 
 namespace sunxi_fex_tools_gui4win
@@ -37,7 +41,7 @@ namespace sunxi_fex_tools_gui4win
                     if (proc != null)
                     {
                         proc.WaitForExit();
-                        MessageBox.Show(String.Format("bin2fex转换成功！", this.Fexc), this.Text,
+                        MessageBox.Show(String.Format(Resource1.Text_MsgBox_TransFex_bin2fexSuccess, this.Fexc), this.Text,
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
@@ -49,7 +53,7 @@ namespace sunxi_fex_tools_gui4win
             }
             else
             {
-                MessageBox.Show("bin文件不存在！");
+                MessageBox.Show(Resource1.Text_MsgBox_TransFex_BinNotFound);
             }
         }
 
@@ -64,7 +68,7 @@ namespace sunxi_fex_tools_gui4win
                     if (proc != null)
                     {
                         proc.WaitForExit();
-                        MessageBox.Show(String.Format("fex2bin转换成功！", this.Fexc), this.Text,
+                        MessageBox.Show(String.Format(Resource1.Text_MsgBox_TransBin_fex2binSuccess, this.Fexc), this.Text,
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
@@ -76,7 +80,7 @@ namespace sunxi_fex_tools_gui4win
             }
             else
             {
-                MessageBox.Show("fex文件不存在！");
+                MessageBox.Show(Resource1.Text_MsgBox_TransBin_fex2binSuccess);
             }
         }
 
@@ -104,7 +108,7 @@ namespace sunxi_fex_tools_gui4win
 
         private void About_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("关于 Allwinner 配置档转换工具\n\n版本 v1.001\n\nLicense:\nGPLv2\n\nGithub:\nhttps://github.com/OtakuNekoP/sunxi-fex-tools-gui4win\n\nOpen Source Components:\nsunxi-tools (https://github.com/linux-sunxi/sunxi-tools)\nCygwin (https://www.cygwin.com/)\n");
+            MessageBox.Show(Resource1.Text_MsgBox_About);
         }
 
         private void PathFex_DragEnter(object sender, DragEventArgs e)
@@ -146,6 +150,34 @@ namespace sunxi_fex_tools_gui4win
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void LangBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String LangNowSelected;
+            if (LangBox1.SelectedIndex == 0)
+            {
+                LangNowSelected = "zh-CN";
+            }
+            else
+            {
+                if(LangBox1.SelectedIndex == 1)
+                {
+                    LangNowSelected = "en-US";
+                }
+                else
+                {
+                    LangNowSelected = "en-US";
+                }
+            }
+
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(LangNowSelected);
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LangNowSelected);
+
+            //(new MainForm1()).Show();//TEST
+
+            Controls.Clear();
+            InitializeComponent();
         }
     }
 }
