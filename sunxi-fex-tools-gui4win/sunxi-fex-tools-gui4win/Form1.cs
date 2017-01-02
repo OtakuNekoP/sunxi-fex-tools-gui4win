@@ -37,7 +37,7 @@ namespace sunxi_fex_tools_gui4win
         {
             if (File.Exists(PathBin.Text))
             {
-                Bin2fexCmd = Bin2fex + PathBin.Text + " " + Path.GetDirectoryName(PathBin.Text) + "\\" + Path.GetFileNameWithoutExtension(PathBin.Text) + ".fex";
+                Bin2fexCmd = Bin2fex + "\"" + PathBin.Text + "\" \"" + Path.GetDirectoryName(PathBin.Text) + "\\" + Path.GetFileNameWithoutExtension(PathBin.Text) + ".fex\"";
                 try
                 {
                     Process proc = Process.Start(Fexc, Bin2fexCmd);
@@ -62,9 +62,9 @@ namespace sunxi_fex_tools_gui4win
 
         private void TransBin_Click(object sender, EventArgs e)
         {
-            if (File.Exists(PathBin.Text))
+            if (File.Exists(PathFex.Text))
             {
-                Fex2binCmd = Fex2bin + PathFex.Text + " " + Path.GetDirectoryName(PathFex.Text) + "\\" + Path.GetFileNameWithoutExtension(PathFex.Text) + ".bin";
+                Fex2binCmd = Fex2bin + "\"" + PathFex.Text + "\" \"" + Path.GetDirectoryName(PathFex.Text) + "\\" + Path.GetFileNameWithoutExtension(PathFex.Text) + ".bin\"";
                 try
                 {
                     Process proc = Process.Start(Fexc, Fex2binCmd);
@@ -83,7 +83,7 @@ namespace sunxi_fex_tools_gui4win
             }
             else
             {
-                MessageBox.Show(Resource1.Text_MsgBox_TransBin_fex2binSuccess);
+                MessageBox.Show(Resource1.Text_MsgBox_TransBin_FexNotFound);
             }
         }
 

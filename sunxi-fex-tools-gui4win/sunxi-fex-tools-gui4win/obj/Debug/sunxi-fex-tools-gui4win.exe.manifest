@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="sunxi-fex-tools-gui4win.exe" version="1.0.1.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="sunxi-fex-tools-gui4win.exe" version="1.0.1.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="bananalogo32.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="sunxi-fex-tools-gui4win" version="1.0.1.2" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="sunxi-fex-tools-gui4win" version="1.0.1.3" language="neutral" processorArchitecture="msil" />
     <commandLine file="sunxi-fex-tools-gui4win.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,49 +44,49 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sunxi-fex-tools-gui4win.exe" size="38400">
-      <assemblyIdentity name="sunxi-fex-tools-gui4win" version="1.0.1.2" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="sunxi-fex-tools-gui4win" version="1.0.1.3" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>63/Fk3yAHAPGd6yX1LDpItlardZOe3mH+j8YOYOaVw0=</dsig:DigestValue>
+        <dsig:DigestValue>sybLpbCZmYiSAA5sIGqUL7biGo2bfWsKKK0/jlQ/104=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\sunxi-fex-tools-gui4win.resources.dll" size="8704">
-      <assemblyIdentity name="sunxi-fex-tools-gui4win.resources" version="1.0.1.2" language="en" processorArchitecture="msil" />
+      <assemblyIdentity name="sunxi-fex-tools-gui4win.resources" version="1.0.1.3" language="en" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JezPboZZXWeggCpUdiJMV4mmStmGK1d26Ux0LZ0xa6o=</dsig:DigestValue>
+        <dsig:DigestValue>d8W0Q5YDy1pUC/JDqHopOF2T7q8/UgiH7izDqDHDUb8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\sunxi-fex-tools-gui4win.resources.dll" size="10240">
-      <assemblyIdentity name="sunxi-fex-tools-gui4win.resources" version="1.0.1.2" language="en-US" processorArchitecture="msil" />
+      <assemblyIdentity name="sunxi-fex-tools-gui4win.resources" version="1.0.1.3" language="en-US" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bFgduU6/jME8TAM8cewWkMaVKqHHlwq5gK6sFVMwsCc=</dsig:DigestValue>
+        <dsig:DigestValue>9ukN71h/sLIhRqy7BH1gVlbY+iTpq7pN3WjNjfMZvfQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\sunxi-fex-tools-gui4win.resources.dll" size="8704">
-      <assemblyIdentity name="sunxi-fex-tools-gui4win.resources" version="1.0.1.2" language="zh-CN" processorArchitecture="msil" />
+      <assemblyIdentity name="sunxi-fex-tools-gui4win.resources" version="1.0.1.3" language="zh-CN" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PM84+tZICKXxpY9he70eeQY0gIUgp5LHpEZxGebdQgE=</dsig:DigestValue>
+        <dsig:DigestValue>g3XaCPbGa7LYkRWf1BRrXQ1HWwEFIgEyQ2s71ZSRrPw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
